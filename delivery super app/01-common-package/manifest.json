@@ -1,0 +1,12 @@
+{
+  "basePath": "",
+  "childs": [
+    {
+      "url": "/maps"
+    },
+    {
+      "url": "/merchants",
+      "permission": "merchant"
+    }
+  ]
+}
