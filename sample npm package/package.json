@@ -1,0 +1,11 @@
+{
+  "name": "sample-npm-package",
+  "version": "2.1.1",
+  "description": "this is a sample npm repo creation procedure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

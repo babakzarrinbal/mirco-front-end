@@ -1,0 +1,72 @@
+container app: 
+ - Routing navigations
+ - Navigation Menu (on the top/left to switch between different app)
+ - showing level1 apps based on navigation
+ - holding user tokens to pass to childs
+ - keeping current user information
+ - permission checks for different apps
+
+
+
+level1 app: 
+ - sso app 
+    login/signup logic and pass it up 
+    save password feature
+    pass the information up to container app
+- user space app
+  Manage profile
+  View settings
+  View my purchases
+  financial app for user
+  chat page
+- driver space app
+  show current status of delivery
+    done, in progress=>map
+  list comming deliveries
+- merchant space app
+    - show current open processes of merchant
+    - pages for different managements
+  admin/support
+    - customer mangament pages
+    - driver management pages
+    - merchant management pages
+    - user management pages
+    - config pages
+
+
+Stand alone apps: 
+  - map app
+    View delivery persons location
+    View shop location
+    status of delivery
+  - financial app
+    refund page
+  - chat app
+  - merchant shop app
+
+
+
+implementation concepts:
+  Common-package functionalities
+    Styles
+    Communication functionalities (messaging)
+    Common util ( it can have loadash/axios or any other framework as dependencies)
+    Implement platform free translations for sentences (Translation file for Internationalization provider like i18next to support multi-language )
+
+  Common-package-react 
+  components that implements React-query
+  Lazy loading component => maybe a lazyloader component where it gets the component by lazy and renders it wit props => yeap it works as well. 
+  Common custom component that is shared across the superapp
+
+  Container app
+    Routing library
+    Iframe
+    Keep users info
+    Context/or store in state
+    Child info (url, state, etc) =>possible but use it as last resort
+    Permission checks for child apps based on manifest
+
+  Manifest for the ecosystem, json configuration
+  Children info (Array of object with root url)
+  Basic common functionality definitions (Array of objects method id , method reference) 
+
