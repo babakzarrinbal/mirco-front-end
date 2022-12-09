@@ -1,8 +1,17 @@
 {
+  "version": "1.0.0",
   "basePath": "",
+  "container": {
+    "events": {
+      "getApiBearer": "dsa_authentication_getApiBearer",
+      "login": "dsa_authentication_login",
+      "signup": "dsa_authentication_signup"
+    }
+  },
   "childs": [
     {
-      "url": "/maps"
+      "url": "/maps",
+      "events": ""
     },
     {
       "url": "/merchants",

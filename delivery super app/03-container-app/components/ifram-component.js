@@ -5,3 +5,5 @@ const IframeComp = ({ url, title, getFrameWindow }) => {
   }, []);
   return <iframe src={url} title={title} ref={frameRef} />;
 };
+
+export default IframeComp;
