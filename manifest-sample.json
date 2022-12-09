@@ -1,0 +1,16 @@
+{
+  "childs":[
+    {
+      "id":"firstchild",
+      "title":"first initial children app",
+      "url":"https://mydomain.com/child1"
+    }
+    ],
+    "camareApi":{
+      "eventType":"getCamera",
+      "functionname":"common/getCamera"
+    },
+    "commonJs":{
+      "communicationscript":"https://mydomain.com/commonjs/v2-2-2/communication.js"
+    }
+}

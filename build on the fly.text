@@ -1,0 +1,9 @@
+build on the fly 
+
+deployment areas  staging/production
+ serving folder
+ source folder
+  call to fetch the configs for the build
+  do the build and start serve
+
+on update config trigger will tell the container that is serving front-end app with get restarted
